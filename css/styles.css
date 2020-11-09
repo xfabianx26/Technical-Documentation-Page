@@ -1,0 +1,220 @@
+
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+body{
+  background: url(https://image.freepik.com/vector-gratis/fondo-blanco-semitono_115579-724.jpg);
+  background-size: cover;
+
+}
+
+
+
+
+.main-section header {
+  font-size: 24px;
+}
+/* linea de decoración */
+#linea{
+  margin-top: 20px;
+  width: 100%;
+  height: 8px;
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.65) 12%, rgba(0,0,0,0.65) 25%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 12%,rgba(0,0,0,0.65) 25%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 12%,rgba(0,0,0,0.65) 25%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );;
+
+}
+/* fin-  linea de decoración */
+
+#navbar h1 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-section header{
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(#000, #000, #fff,0.4);
+  text-shadow: 1px 2px 2px #000;
+  
+             
+             
+}
+
+
+
+nav ul {
+  list-style: none;
+  font-size: 20px;
+}
+nav ul li{
+  font-size: 20px;
+  display: inline-block;
+  margin: 0px 20px 0px 20px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+nav ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  transition: all 300ms;
+ 
+}
+nav ul li a:hover {
+color: rgb(20, 187, 173);
+font-weight: bold;
+transform: scale(1.2);
+}
+/* fondo */
+#navbar {
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  border-right: 2px solid #ccc;
+  box-shadow: 1px 2px 4px #000,1px 2px 4px #000;
+  background: url(https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2019/03/java.jpg?itok=DrdDXiro);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Estilo contenido */
+#seccionSegunda {
+	display: flex;
+	padding: 80px 0;
+}
+
+#seccionSegunda div{
+    padding: 0 0.5em;
+    align-self: center;
+    flex-basis: 60%;
+    text-align: justify;
+}
+#seccionSegunda  img{
+  margin-top:   72px;
+    flex-basis: 50%;
+    max-width: 50%;
+    align-self: flex-start; 
+    box-shadow: 1px 2px 4px #000,1px 2px 4px #000;
+    border-radius: 5%;
+}
+#seccionSegunda img:hover{
+  opacity: 0.5;
+  
+}
+/* fin */
+#main-doc {
+  width: 80%;
+  height: auto;
+  position: absolute;
+  right: 0;
+}
+
+.main-section {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+/* Pie de página */
+footer{
+  background-color: #121018;
+}
+
+#pieDePagina {
+display: flex;
+justify-content: space-around;
+padding: 20px 0;
+}
+#copyright{
+  color: #fff;
+  
+}
+#copyright a{
+  color: #fff;
+
+}
+#copyright a:hover{
+  color: rgb(22, 144, 165);
+
+}
+
+
+
+@media screen and (min-width: 565px) and (max-width: 1000px){
+
+  #seccionSegunda {
+    display: block;
+    padding: 80px 0;
+  }
+  #seccionSegunda img {
+   
+    max-width: 100%;
+  
+  }
+  #navbar h1 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 19px;
+  }
+  #navbar {
+    width: 23%;
+
+  }
+  nav ul li {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 565px){
+  header h1 {
+    font-size: 14px;
+  }
+  #main-doc {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    right: 0;
+  }
+  #seccionSegunda {
+    display: block;
+    padding: 80px 0;
+  }
+  #seccionSegunda img {
+   
+    max-width: 90%;
+  
+  }
+  nav ul li a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    transition: all 300ms;
+  }
+ 
+  nav ul li a:hover {
+    color: #000;
+  }
+  #navbar {
+    width: 100%;
+    height: 218px;
+    background: #fff;
+    position: relative;
+    border-right: 2px solid #ccc;
+   
+  }
+  #copyright {
+    color: #fff;
+    font-size: 12px;
+  }
+ 
+} 
